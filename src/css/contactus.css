@@ -1,0 +1,25 @@
+:root {
+    --primaryColor: #66d9e0;
+  }
+
+.form-wrapper label{
+    font-weight: bold;
+}
+
+.map-wrapper{
+    border-top: 1px  solid #ccc;
+}
+
+.btn{
+    background-color: var(--primaryColor);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.btn:hover{
+    color: #ffffff;
+}
+
+.btn:focus{
+    background: var(--primaryColor);
+}
