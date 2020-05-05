@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import CustomSection from "../components/Section";
 import SERVICES from "../data/services";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 const Footer = (props) => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <React.Fragment>
       <CustomSection bgColor="#313131">
@@ -34,7 +34,11 @@ const Footer = (props) => {
                     service.serviceTitle.slice(0, 1) +
                     service.serviceTitle.slice(1).toLowerCase();
 
-                  return <Link to={`/services/${service.serviceTitle}`}><li key={key}>{updatedServiceTitle}</li></Link>;
+                  return (
+                    <Link key={key} to={`/services/${service.serviceTitle}`}>
+                      <li>{updatedServiceTitle}</li>
+                    </Link>
+                  );
                 })}
               </ul>
             </div>

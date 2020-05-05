@@ -14,6 +14,7 @@
     background-color: var(--primaryColor);
     color: #ffffff;
     font-weight: 700;
+    font-size: 12px;
 }
 
 .btn:hover{

@@ -1,4 +1,4 @@
-import { SHOW_SERVICES, SHOW_SERVICE_DETAIL } from "./types";
+import {  SHOW_SERVICE_DETAIL } from "./types";
 import Services from "../../data/services";
 
 export const showAllServices = (serviceId) => (dispatch) => {
@@ -6,6 +6,7 @@ export const showAllServices = (serviceId) => (dispatch) => {
     if (serviceId === service.serviceTitle) {
       return service;
     }
+    return null;
   });
  
   dispatch({

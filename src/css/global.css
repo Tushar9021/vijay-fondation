@@ -30,6 +30,10 @@ body {
   text-align: center;
 }
 
+.section-header{
+  margin-bottom: 15px;
+}
+
 .section-header-wrapper h2 {
   text-align: center;
   border-bottom: 2px solid var(--primaryColor);
@@ -124,6 +128,7 @@ hr {
 
 .page-title h1 {
   font-weight: bolder;
+  text-align: center;
 }
 
 .footer-data li i::after {
@@ -168,6 +173,15 @@ a:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primaryColor); 
+}
+
+.btn-wrapper{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mar-top{
+  margin-top: 3px;
 }
 
 @media (max-width: 578px) {

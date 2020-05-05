@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import ServiceDetail from "./pages/ServiceDetail";
 import Store from "./store/store";
 import Services from "./data/services";
+import NewSchemes from './pages/NewSchemes'
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/services/:serviceId" exact>
             <ServiceDetail />
+          </Route>
+          <Route path="/new-schemes/" exact>
+            <NewSchemes />
           </Route>
           <Route path="*">
             <PageNotFound />

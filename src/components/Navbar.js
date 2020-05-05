@@ -65,6 +65,11 @@ const Navbar = (props) => {
               Contact Us
             </NavLink>
           </li>
+          <li className="nav-item">
+          <Link to="/new-schemes">
+            <button className="btn mar-top">NEW SCHEMES</button>
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
